@@ -5,10 +5,27 @@
 *::after {
 	box-sizing: border-box;
 }
+html{
+	font-size: $font-size-base;
+}
 body{
 	// font-family: '微軟正黑體', 'Microsoft JhengHei', Tahoma, verdana, STHeiti, serif, sans-serif;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-	// font-size: 15px;
+	font-family: 
+		PingFang TC
+		,
+		BlinkMacSystemFont
+		, 
+		"Segoe UI"
+		, 
+		'微軟正黑體', "Microsoft JhengHei"
+		, 
+		Roboto
+		, 
+		"Helvetica Neue", 
+		Arial
+		, 
+		sans-serif;
+	font-size: 1rem;
 	// line-height: 1.5;
 	// font-weight: 300;
 	background-color: $bodyColor;

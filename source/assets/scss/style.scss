@@ -1,5 +1,6 @@
 // scss var and funs and mixin
 @import 'variables';
+@import 'mixins/bgImg-retina';
 // /scss var and funs and mixin
 
 
@@ -10,3 +11,28 @@
 /* End of base
 -------------------------------------------------- */
 
+
+/* layout
+-------------------------------------------------- */
+@import 'layout/footer';
+/* End of layout
+-------------------------------------------------- */
+
+
+/* utils
+-------------------------------------------------- */
+@import 'utils/colors';
+@import 'utils/borders';
+/* End of utils
+-------------------------------------------------- */
+
+
+/* pages
+-------------------------------------------------- */
+.p-index-vision--bg{
+  min-height: 840px;
+  background-image: url('././../img/p-index--vision.png');
+  @include retina('././../img/p-index--vision@2x.png', 2, 100% auto, no-repeat center left);
+}
+/* End of pages
+-------------------------------------------------- */

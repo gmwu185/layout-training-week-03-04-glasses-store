@@ -1,8 +1,8 @@
 // COLORS
-$primary: #AA0601;
-$primary-dark:#650300;
-$primry-light:#AA06010D;
-// $seconColor:;
+$red: rgba(170, 6, 1, 1);
+$red-dark:rgba(101, 3, 0, 1);
+$red-light:rgba(251, 242, 242, 1);
+
 // 無彩色系
 $black: #000000;
 $gray-dimgray:#212529;
@@ -10,10 +10,26 @@ $gray:#707070;
 $gray-light:#DEE2E6;
 $white: #FFFFFF;
 // /無彩色系
-$bodyColor: $white;
 // END COLORS
 
+$colors: (
+  // key, value
+  'primary': $red,
+  'primaryDark': $red-dark,
+  'primaryLight': $red-light,
+  'black': $black,
+  'grayDimgray': $gray-dimgray,
+  'gray': $gray,
+  'grayLight': $gray-light,
+  'white': $white
+) !default;
+// - '!default' 覆蓋掉先前宣告預設的變數值，這裡可用可不用。
 
 
+$bodyColor: $white;
+
+// font-size
+$font-size-base: 16px;
+// /font-size
 
 

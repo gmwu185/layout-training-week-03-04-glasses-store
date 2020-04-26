@@ -1,0 +1,30 @@
+/*----------  background-colors  ----------*/
+@each $key, $value in $colors {
+  .u-bg--#{$key} {
+    background-color: $value;
+  }
+}
+/*----------  /background-colors  ----------*/
+/*----------  text-colors  ----------*/
+@each $key, $value in $colors {
+  .u-text--#{$key} {
+    color: $value;
+  }
+  a.u-link--#{$key} {
+    color: $value;
+    &:hover, &:focus{
+      color: $value;
+    }
+  }
+  .u-links--#{$key} {
+    a {
+      color: $value;
+      &:hover, &:focus{
+        color: darken($value, 20%);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+/*----------  /text-colors  ----------*/
+

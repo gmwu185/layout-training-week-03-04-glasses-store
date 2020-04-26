@@ -1,0 +1,7 @@
+{
+  "cssrem.fixedDigits": 4,
+  // "cssrem.autoRemovePrefixZero": true,  
+  "cssrem.rootFontSize": 16,
+  "px-to-rem.px-per-rem": 16,
+  "sassVariablesHelper.route": "/source/assets/scss/_variables.scss"
+}

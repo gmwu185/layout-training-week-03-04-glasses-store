@@ -1,0 +1,10 @@
+/*----------  borders  ----------*/
+.u-border{
+  border: 1px solid;
+}
+@each $key, $value in $colors {
+  .u-border--#{$key} {
+    border-color: $value;
+  }
+}
+/*----------  /borders  ----------*/
