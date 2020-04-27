@@ -1,0 +1,77 @@
+/*----------  grid  ----------*/
+/* container */
+.l-container {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: $gutterWidth-small / 2;
+  padding-right: $gutterWidth-small / 2;
+  @include small {
+    padding-left: $gutterWidth-medium / 2;
+    padding-right: $gutterWidth-medium / 2;
+  }
+  @include medium {
+    max-width: $totalWidth-medium + $gutterWidth-medium;
+  }
+  @include large {
+    max-width: $totalWidth-large + $gutterWidth-medium;
+  }
+  &--full {
+    padding-left: $gutterOutside-small;
+    padding-right: $gutterOutside-small;
+    @include small{
+      padding-left: $gutterOutside-medium;
+      padding-right: $gutterOutside-medium;
+    }
+  }
+}
+/* /container */
+/* row */
+.l-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gutterWidth-small / 2);
+  margin-right: -($gutterWidth-small / 2);
+  @include small{
+    margin-left: -($gutterWidth-medium / 2);
+    margin-right: -($gutterWidth-medium / 2);
+  }
+}
+/* /row */
+/* col */
+$classPrefixName: #{l-col};
+
+.#{$classPrefixName} {
+  flex: 1;
+}
+
+@include medium-below {
+  @include columnBatch ($classPrefixName, $grid-num-small, -sm);
+};
+@include medium {
+  @include columnBatch ($classPrefixName, $grid-num-medium, -md);
+};
+@include large {
+  @include columnBatch ($classPrefixName, $grid-num-large, -lg);
+};
+
+@include medium-below {
+  [class^="#{$classPrefixName}"] {
+    flex: 1 1 calc(100% - 4px);
+    max-width: 100%;
+    padding-left: $gutterWidth-small / 2;
+    padding-right: $gutterWidth-small / 2;
+  }
+}
+@include small {
+  [class^="#{$classPrefixName}"] {
+    padding-left: $gutterWidth-medium / 2;
+    padding-right: $gutterWidth-medium / 2;
+  }
+}
+// @include  {
+  
+// }
+/* /col */
+/*----------  /grid  ----------*/
+
+

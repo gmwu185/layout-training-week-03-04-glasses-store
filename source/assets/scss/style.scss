@@ -1,6 +1,8 @@
 // scss var and funs and mixin
 @import 'variables';
 @import 'mixins/bgImg-retina';
+@import 'mixins/breakpoints';
+@import 'mixins/columnBatch';
 // /scss var and funs and mixin
 
 
@@ -12,13 +14,6 @@
 -------------------------------------------------- */
 
 
-/* layout
--------------------------------------------------- */
-@import 'layout/footer';
-/* End of layout
--------------------------------------------------- */
-
-
 /* utils
 -------------------------------------------------- */
 @import 'utils/colors';
@@ -27,12 +22,16 @@
 -------------------------------------------------- */
 
 
+/* layout
+-------------------------------------------------- */
+@import 'layout/grid';
+@import 'layout/footer';
+/* End of layout
+-------------------------------------------------- */
+
+
 /* pages
 -------------------------------------------------- */
-.p-index-vision--bg{
-  min-height: 840px;
-  background-image: url('././../img/p-index--vision.png');
-  @include retina('././../img/p-index--vision@2x.png', 2, 100% auto, no-repeat center left);
-}
+@import 'pages/index';
 /* End of pages
 -------------------------------------------------- */

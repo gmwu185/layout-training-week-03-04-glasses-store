@@ -33,3 +33,17 @@ $font-size-base: 16px;
 // /font-size
 
 
+
+$totalWidth-medium: 672px; //總寬-中型裝置以上
+$totalWidth-large: 1200px; //總寬-大型裝置以上
+
+$grid-num-small: 4;
+$gutterWidth-small: 12px; //欄間距 or 間隔寬度-行動裝置以 '下' 尺寸
+$gutterOutside-small: $gutterWidth-small/2; //外部間距-行動裝置以 '下' 尺寸
+
+$grid-num-medium: 8;
+$gutterWidth-medium: 24px; //欄間距 or 間隔寬度-小裝裝置以 '上' 尺寸
+$gutterOutside-medium: $gutterWidth-medium/2; //外部間距-小裝裝置以 '上' 尺寸
+
+$grid-num-large: 12;
+// $grid-maxNum: $grid-num-large;

@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>glasses shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <a href="#" class="ham-icon">
+  <header class="u-bg--primary">
+    <a href="#" class="u-link--white">
       <i class="fas fa-bars"></i>
     </a>
     <a href="index.html">
@@ -24,36 +25,47 @@
     </nav>
   </header>
   <main>
-    <section class="u-bg--primary p-index-vision--bg">
-      <h1><span>Promise-Desert 2020 早春系列</span><span>看得清，才能看得遠</span></h1>
+    <section class="l-container--full p-index-vision p-index-vision--bg">
+      <article class="l-container p-index-vision__inner">
+        <div class="l-row">
+          <div class="l-col">
+            <h1 class="u-text--primaryDark p-index-vision__title"><span class="p-index-vision__title__sub">Promise-Desert 2020 早春系列</span><span class="p-index-vision__title__main">看得清，才能看得遠</span></h1>
+          </div>
+        </div>
+      </article>
     </section>
-    <section class="u-bg--primary">
-      <h2>用專業的心，做專業的事</h2>
-      <ul>
-        <li>
-          <img src="assets/img/icon--circleDollar.svg" alt="價格圖示">
-          <h3>單一價格</h3>
-          <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-        </li>
-        <li>
-          <img src="assets/img/icon--clock.svg" alt="時間圖示">
-          <h3>20 分鐘即可取件</h3>
-          <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
-        </li>
-        <li>
-          <img src="assets/img/icon--heart.svg" alt="心形圖示">
-          <h3>安心售後服務</h3>
-          <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-        </li>
-        <li>
-          <img src="assets/img/icon--glasses.svg" alt="眼鏡圖示">
-          <h3>關於鏡片</h3>
-          <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-        </li>
-      </ul>
+    <section class="l-container--full u-bg--primaryLight">
+      <article class="">
+        <div class="l-container">
+          <h2>用專業的心，做專業的事</h2>
+          <ul class="l-row">
+            <li class="l-col-sm--1-1 l-col-md--2-1 l-col-lg--4-1">
+              <img src="assets/img/icon--circleDollar.svg" alt="價格圖示">
+              <h3>單一價格</h3>
+              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+            </li>
+            <li class="l-col-sm--1-1 l-col-md--2-1 l-col-lg--4-1">
+              <img src="assets/img/icon--clock.svg" alt="時間圖示">
+              <h3>20 分鐘即可取件</h3>
+              <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+            </li>
+            <li class="l-col-sm--1-1 l-col-md--2-1 l-col-lg--4-1">
+              <img src="assets/img/icon--heart.svg" alt="心形圖示">
+              <h3>安心售後服務</h3>
+              <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+            </li>
+            <li class="l-col-sm--1-1 l-col-md--2-1 l-col-lg--4-1">
+              <img src="assets/img/icon--glasses.svg" alt="眼鏡圖示">
+              <h3>關於鏡片</h3>
+              <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+      
     </section>
-    <section class="u-bg--primaryDark ">
-      <h2 class="u-text--primaryLight">經典系列鏡框</h2>
+    <section class="u-bg--white ">
+      <h2 class="u-text--primaryDark">經典系列鏡框</h2>
       <ul>
         <li>
           <img src="assets/img/p-index--classSeries-1.png" alt="經典系列鏡框圖片一" srcset="assets/img/p-index--classSeries-1.png 1x, assets/img/p-index--classSeries-1@2x.png 2x">
@@ -92,7 +104,7 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="u-bg--white">
       <h2>顧客推薦</h2>
       <ul>
         <li>
@@ -129,7 +141,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="u-bg--primaryLight">
       <h2>聯絡我們</h2>
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form action="">
@@ -210,7 +222,7 @@
     </div>
   </footer>
   <script>
-    // $('.ham-icon').click(function(e) {
+    // $('.js-hamIcon').click(function(e) {
     //   e.preventDefault();
     //   $('.dropdown').toggleClass('active')
     // });

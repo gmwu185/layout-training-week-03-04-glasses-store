@@ -1,0 +1,58 @@
+
+/*----------  index  ----------*/
+.p-index-vision{
+  &--bg{
+    background-size: auto 100%;
+    background-image: url('././../img/p-index--vision.png');
+    @include retina('././../img/p-index--vision.png', 2, cover, no-repeat center right 50%);
+  }
+  &__inner{
+    display: flex;
+    // flex 寫法一
+    justify-content: flex-end;
+    align-items: center;
+    // /flex 寫法一
+    // flex 寫法二
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-end;
+    // /flex 寫法二
+    min-height: 394px;
+    @include medium{
+      min-height: 840px;
+    }
+    // @include large{
+    //   min-height: 840px;
+    // }
+  }
+  &__title{
+    text-align: right;
+    // font-size: 1rem;
+    line-height: 1.375rem;
+    &__sub{
+      display: block;
+      @include medium{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      @include large{
+        font-size: 2.25rem;
+        line-height: 3.125rem;
+      }
+    }
+    &__main{
+      display: block;
+      font-size: 2rem;
+      line-height: 2.8125rem;
+      @include medium{
+        font-size: 2.5rem;
+        line-height: 4.1875rem;
+      }
+      @include large{
+        font-size: 4rem;
+        line-height: 5.625rem;
+      }
+    }
+  }
+}
+/*----------  /index  ----------*/

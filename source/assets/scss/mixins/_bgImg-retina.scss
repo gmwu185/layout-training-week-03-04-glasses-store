@@ -3,8 +3,8 @@
 //  * Examples:
 //  *
 //  *   background-image: url('././../img/p-index--vision.png'); // 1 倍的背景圖片其他屬性不用寫
-//  *   @include retina(/images/mypic.jpg, 2); // 2 倍的背景圖片，其他的背景屬性設定要帶入 scss mixin 中輸出使用
-//  *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent); // 3 倍的背景圖片
+//  *   @include retina(/images/mypic.jpg, 2); // 2 倍的背景圖片，其他的背景屬性設定要帶入 scss mixin 中輸出使用，保持 1x 圖片名稱 2x.xxx 倍檔名會自帶
+//  *   @include retina(/images/mypic.jpg, 3, 100px 100px, left top no-repeat transparent); // 3 倍的背景圖片，保持 1x 圖片名稱 3x.xxx 倍檔名會自帶
 //  *
 //  * @param  {Value}  $path               The path to the file name minus extension.
 //  * @param  {Number} $cap:    2          The highest pixel density level images exist for.
