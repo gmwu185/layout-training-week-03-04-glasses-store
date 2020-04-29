@@ -1,5 +1,19 @@
 
 /*----------  index  ----------*/
+.p-index-h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.0625rem;
+  @include medium {
+    font-size: 2rem;
+    line-height: 2.8125rem;
+  }
+  @include large {
+    font-size: 3rem;
+    line-height: 4.1875rem;
+  }
+}
+
 .p-index-vision{
   &--bg{
     background-size: auto 100%;
@@ -55,4 +69,12 @@
     }
   }
 }
+
+
+
+
+
+
+
+
 /*----------  /index  ----------*/

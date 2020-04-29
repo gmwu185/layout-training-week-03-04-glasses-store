@@ -91,8 +91,8 @@ gulp.task('default',
           ? 指定開啟瀏覽器
           * MacOS 如果有裝 Parallels Desktop.app 要注意瀏覽器名稱，最直接方式就是指定路徑與程式名。
         */
-        browser: "/Applications/Firefox Developer Edition.app"  // MacOS [ Firefox Dev 版本 ] 
-        // browser: "/Applications/Google Chrome.app"  // MacOS [ google chrome ] 
+        // browser: "/Applications/Firefox Developer Edition.app"  // MacOS [ Firefox Dev 版本 ] 
+        browser: "/Applications/Google Chrome.app"  // MacOS [ google chrome ] 
       });
 
       gulp.watch('./source/assets/scss/**/*.scss', gulp.series('sass'));

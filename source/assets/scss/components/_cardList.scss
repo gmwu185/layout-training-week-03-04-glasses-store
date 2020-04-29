@@ -1,0 +1,76 @@
+.c-iconCards{
+  @include medium {
+    align-content: stretch;
+    // min-height: 700px;
+    // @include large {
+    //   margin-bottom: 20px;
+    // }
+  }
+  &__item{
+    padding-top: 1.25rem;
+    padding-bottom: .5rem;
+    @include medium {
+      min-height: 255px;
+      margin-bottom: 12px;
+    }
+    @include large {
+      min-height: 289px;
+      padding-top: 1rem;
+      padding-bottom: 0;
+      margin-bottom: 0px;
+      // min-height: 500px;
+    }
+    &__inner {
+      padding-left: 64px;
+      padding-right: 64px;
+      @include medium {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @include large {
+        padding-left: 37px;
+        padding-right: 37px;
+      }
+    }
+    &__title{
+      text-align: center;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin-bottom: .5rem;
+      color: $primaryDarkColor;
+      @include large {
+        font-size: 1.5rem;
+        line-height: 2.0625rem;
+        margin-bottom: 4px;
+      }
+    }
+    &__content{
+      line-height: 24px;
+      @include medium {
+        min-height: 95px;
+      }
+    }
+  }
+  &__icon{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    @include large {
+      height: 6.25rem;
+      margin-bottom: 40px;
+    }
+    &__img {
+      width: 5rem;
+      
+      @include large {
+        width: 100px;
+        // height: auto;
+        
+      }
+    }
+  }
+}

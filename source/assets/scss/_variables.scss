@@ -10,13 +10,18 @@ $gray:#707070;
 $gray-light:#DEE2E6;
 $white: #FFFFFF;
 // /無彩色系
+
+$primaryColor: $red;
+$primaryDarkColor: $red-dark;
+$primaryLightColor: $red-light;
 // END COLORS
 
 $colors: (
   // key, value
-  'primary': $red,
-  'primaryDark': $red-dark,
-  'primaryLight': $red-light,
+  'primary': $primaryColor,
+  'primaryDark': $primaryDarkColor,
+  'primaryLight': $primaryLightColor,
+
   'black': $black,
   'grayDimgray': $gray-dimgray,
   'gray': $gray,
@@ -26,7 +31,9 @@ $colors: (
 // - '!default' 覆蓋掉先前宣告預設的變數值，這裡可用可不用。
 
 
-$bodyColor: $white;
+
+$bodyBgColor: $white;
+$bodyTextColor: $black;
 
 // font-size
 $font-size-base: 16px;
@@ -34,6 +41,9 @@ $font-size-base: 16px;
 
 
 
+// /**
+//  * * grid-system set  
+//  **/
 $totalWidth-medium: 672px; //總寬-中型裝置以上
 $totalWidth-large: 1200px; //總寬-大型裝置以上
 
@@ -46,4 +56,6 @@ $gutterWidth-medium: 24px; //欄間距 or 間隔寬度-小裝裝置以 '上' 尺
 $gutterOutside-medium: $gutterWidth-medium/2; //外部間距-小裝裝置以 '上' 尺寸
 
 $grid-num-large: 12;
-// $grid-maxNum: $grid-num-large;
+// /**
+//  * * /grid-system set  
+//  **/
