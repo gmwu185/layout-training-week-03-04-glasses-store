@@ -65,41 +65,36 @@
     @include large {
       margin-right: -2rem;
     }
-  }
-  &Link {
-    & a {
-      display: block;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      padding: 1rem;
-      @include medium {
-        padding: 1rem 1.25rem;
-      }
-      @include large {
-        padding: 1rem 2rem;
-      }
+  } 
+}
+
+.l-navbarLink{
+  & a {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 1rem;
+    @include medium {
+      padding: 1rem 1.25rem;
     }
-  }
-  &--primary {
+    @include large {
+      padding: 1rem 2rem;
+    }
+
     background-color: $primaryColor;
-    .l-navbarLink{
-      a {
-        background-color: $primaryColor;
-        color: $white;
-        &:hover, &:focus {
-          background-color: darken($primaryColor, 5%);
-        }
-      }
-      @include medium-below {
-        border-top: 1px solid;
-        border-color: $white;
-        &:last-child {
-          border-bottom: 1px solid;
-          border-color: $white;
-        }
-      }
+    color: $white;
+    &:hover, &:focus {
+      background-color: darken($primaryColor, 5%);
     }
-  }  
+  }
+  @include medium-below {
+    border-top: 1px solid;
+    border-color: $white;
+    &:last-child {
+      border-bottom: 1px solid;
+      border-color: $white;
+    }
+  }
 }
 
 .js-navbar{
