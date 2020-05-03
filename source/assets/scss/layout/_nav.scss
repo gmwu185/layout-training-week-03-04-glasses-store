@@ -68,24 +68,15 @@
   } 
 }
 
-.l-navbarLink{
-  & a {
-    display: block;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    padding: 1rem;
-    @include medium {
-      padding: 1rem 1.25rem;
-    }
-    @include large {
-      padding: 1rem 2rem;
-    }
-
-    background-color: $primaryColor;
-    color: $white;
-    &:hover, &:focus {
-      background-color: darken($primaryColor, 5%);
-    }
+.l-navbarLink {
+  background-color: $primaryColor;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1rem;
+  color: $white;
+  @include medium {
+    padding: 1rem 1.25rem;
   }
   @include medium-below {
     border-top: 1px solid;
@@ -93,6 +84,14 @@
     &:last-child {
       border-bottom: 1px solid;
       border-color: $white;
+    }
+  }
+  @include large {
+    padding: 1rem 2rem;
+  }
+  &--hover {
+    &:hover, &:focus {
+      background-color: darken($primaryColor, 5%);
     }
   }
 }

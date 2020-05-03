@@ -16,20 +16,26 @@
     @include medium {
       margin-left: -1.25rem;
     }
+    &__item a {
+      font-size: 1rem;
+      @include large-below{
+        padding: 1.25rem;
+      }
+      @include large {
+        padding: 1rem 1.25rem;
+      }
+    }
   }
 }
 .l-footerLink {
   display: inline-block;
   font-size: 1rem;
   color: $white;
-  @include large-below{
-    padding: 1.25rem;
-  }
-  @include large {
-    padding: 1rem 1.25rem;
-  }
-  &:hover, &:focus {
-    background-color: darken($primaryColor, 5%);
+  
+  &--hover {
+    &:hover, &:focus {
+      background-color: darken($primaryColor, 5%);
+    }
   }
 }
 
@@ -97,9 +103,6 @@
       }
       @include large {
         padding: 0;
-      }
-      &:hover {
-        background-color: darken($primaryColor, 5%);
       }
     }
   }
