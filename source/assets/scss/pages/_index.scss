@@ -70,7 +70,113 @@
   }
 }
 
-
+.p-staggerList {
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include large-below {
+      margin-bottom: 8px;
+    }
+    @include large {
+      margin-bottom: 32px;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+    }
+    &__cover {
+    }
+    &__content {
+      @include medium-below {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include large-below {
+        text-align: center;
+      }
+      &__title {
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 28px;
+        @include medium-below {
+          line-height: 33px;
+          color: $white;
+        }
+        @include medium {
+          color: $primaryColor;
+        }
+        @include large {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+  &Icon {
+    background-position: center center;
+    background-size: cover;
+    margin-right: 8px;
+    display: inline-block;
+    &--diamond {
+      @include medium-below {
+        background-image: url("../img/icon--diamond-white.svg");
+      }
+      @include medium {
+        background-image: url("../img/icon--diamond-primary.svg");
+      }
+      @include large-below {
+        width: 32px;
+        height: 25px;
+      }
+      @include large {
+        width: 48px;
+        height: 38px;
+      }
+    }
+    &--sun {
+      @include medium-below {
+        background-image: url("../img/icon--sun-white.svg");
+      }
+      @include medium {
+        background-image: url("../img/icon--sun-primary.svg");
+      }
+      @include large-below {
+        width: 32px;
+        height: 32px;
+      }
+      @include large {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &--lightning {
+      @include medium-below {
+        background-image: url("../img/icon--lightning-white.svg");
+      }
+      @include medium {
+        background-image: url("../img/icon--lightning-primary.svg");
+      }
+      @include large-below {
+        width: 23px;
+        height: 32px;
+      }
+      @include large {
+        width: 35px;
+        height: 48px;
+      }
+    }
+  }
+}
 
 
 

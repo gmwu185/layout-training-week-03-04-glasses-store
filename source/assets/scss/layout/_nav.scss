@@ -102,6 +102,7 @@
     @include medium-below {
       position: fixed;
       top: 0;
+      z-index: 100;
     }
   }
   &--topFixedPush {
