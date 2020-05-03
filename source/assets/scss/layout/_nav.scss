@@ -1,0 +1,122 @@
+/*----------  l-navbar  ----------*/
+.l-navbar {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  @include medium-below {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @include medium {
+    align-items: center;
+    padding: 1.875rem 3rem;
+  }
+  @include medium {
+    padding: 24px 48px;
+  }
+  @include large {
+    padding: 24px 88px;
+  }
+
+  &__logo {
+    display: inline-block;
+    @include medium-below {
+      max-width: 3rem;
+    }
+    @include medium {
+      max-width: 5rem;
+    }
+  }
+  &__toggler {
+    @include medium-below {
+      position: absolute;
+      display: inline-block;
+      left: 3px;
+      font-size: 18px;
+      padding: 13px;
+    }
+    @include medium {
+      display: none;
+    }
+  }
+  &__dropdown {
+    @include medium-below {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      max-height: 0px;
+      transition: all 0.8s;
+      overflow: hidden;
+      z-index: 120;
+      &.active {
+        max-height: 290px;
+        overflow-y: auto;
+      }
+    }
+    @include medium {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: -1.25rem;
+    }
+    @include large {
+      margin-right: -2rem;
+    }
+  }
+  &Link {
+    & a {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      padding: 1rem;
+      @include medium {
+        padding: 1rem 1.25rem;
+      }
+      @include large {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  &--primary {
+    background-color: $primaryColor;
+    .l-navbarLink{
+      a {
+        background-color: $primaryColor;
+        color: $white;
+        &:hover, &:focus {
+          background-color: darken($primaryColor, 5%);
+        }
+      }
+      @include medium-below {
+        border-top: 1px solid;
+        border-color: $white;
+        &:last-child {
+          border-bottom: 1px solid;
+          border-color: $white;
+        }
+      }
+    }
+  }  
+}
+
+.js-navbar{
+  &--topFixed{
+    width: 100%;
+    @include medium-below {
+      position: fixed;
+      top: 0;
+    }
+  }
+  &--topFixedPush {
+    @include medium-below {
+      padding-top: 48px;
+    }
+    // @include medium {
+    //   padding-top: 108px;
+    // }
+  }
+}
+/*----------  /l-navbar  ----------*/

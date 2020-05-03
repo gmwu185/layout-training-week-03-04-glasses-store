@@ -8,32 +8,33 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="u-bg--primary">
-    <a href="#" class="u-link--white">
-      <i class="fas fa-bars"></i>
+
+  <nav class="l-container--full l-navbar l-navbar--primary js-navbar--topFixed">
+    <a class="l-navbar__toggler u-link--white js-navbar__toggler" title="收合選單按鈕" href="#">
+      <i class="fas fa-bars" alt="收合選單圖示"></i>
     </a>
-    <a href="index.html">
-      <img src="assets/img/l-logo--white.png" alt="" srcset="assets/img/l-logo--white.png 1x, assets/img/l-logo--white@2x.png 2x">
+    <a class="l-navbar__logo" title="Logo" href="index.html">
+      <img src="assets/img/l-logo--white.png" alt="logo 圖片" srcset="assets/img/l-logo--white.png 1x, assets/img/l-logo--white@2x.png 2x">
     </a>
-    <nav>
-      <ul class="dropdown">
-        <li><a title="系列鏡框" href="products.html">系列鏡框</a></li>
-        <li><a title="門市據點" href="locations.html">門市據點</a></li>
-        <li><a title="部落格" href="blog.html">部落格</a></li>
-        <li><a title="常見問題" href="qa.html">常見問題</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="l-container--full p-index-vision p-index-vision--bg">
-      <article class="l-container p-index-vision__inner">
-        <div class="l-row">
-          <div class="l-col">
-            <h1 class="u-text--primaryDark p-index-vision__title"><span class="p-index-vision__title__sub">Promise-Desert 2020 早春系列</span><span class="p-index-vision__title__main">看得清，才能看得遠</span></h1>
-          </div>
+    <ul class="l-navbar__dropdown">
+      <li class="l-navbarLink"><a title="系列鏡框" href="products.html">系列鏡框</a></li>
+      <li class="l-navbarLink"><a title="門市據點" href="locations.html">門市據點</a></li>
+      <li class="l-navbarLink"><a title="部落格" href="blog.html">部落格</a></li>
+      <li class="l-navbarLink"><a title="常見問題" href="qa.html">常見問題</a></li>
+    </ul>
+  </nav>
+  
+  <header class="l-container--full p-index-vision p-index-vision--bg">
+    <article class="l-container p-index-vision__inner">
+      <div class="l-row">
+        <div class="l-col">
+          <h1 class="u-text--primaryDark p-index-vision__title"><span class="p-index-vision__title__sub">Promise-Desert 2020 早春系列</span><span class="p-index-vision__title__main">看得清，才能看得遠</span></h1>
         </div>
-      </article>
-    </section>
+      </div>
+    </article>
+  </header>
+
+  <main>
     <section class="l-container--full u-bg--primaryLight">
       <article class="l-container u-pt--8 u-pb--12 u-pt-md--7 u-pt-lg--16 u-pb-lg--20">
         <h2 class="u-text--primaryDark u-textAlign--center u-mb--3 u-mb-lg--11 p-index-h2">用專業的心，做專業的事</h2>
@@ -184,63 +185,76 @@
       </form>
     </section>
   </main>
-  <footer class="u-bg--primary u-links--primaryLight">
-    <div class="l-footer__nav">
-      <ul class="l-footer__linkList">
-        <li><a title="首頁" href="index.html">首頁</a></li>
-        <li><a title="系列鏡框" href="products.html">系列鏡框</a></li>
-        <li><a title="門市據點" href="locations.html">門市據點</a></li>
-        <li><a title="部落格" href="blog.html">部落格</a></li>
-        <li><a title="常見問題" href="qa.html">常見問題</a></li>
-      </ul>
-      <ul class="l-footer__contactList">
-        <li>
-          <a href="tel:+886-800-000-000">
-            <img src="assets/img/icon--phone.svg" alt="電話圖示">0800-000-000
-          </a>
-        </li>
-        <li>
-          <a href="mailto:glasses@business.com">
-            <img src="assets/img/icon--mail-outline.svg" alt="E-mail 圖示">glasses@business.com
-          </a>
-        </li>
-      </ul>
-    </div>
-    <ul class='l-footer__socialList'>
-      <li>
-        <a target="_blank" title="前往 facebook" href="https://www.facebook.com">
-          <img src="assets/img/icon--social-fb.svg" alt="facebook 圖示">
+  <footer class="l-container--full u-bg--primary">
+    <section class="l-container l-footerContainer u-pt--3 u-pt-md--5 u-pb--5 u-pt-lg--9 u-pb-md--7">
+      <div class="l-row u-mb--5">
+        <div class="l-col-sm--7-4 l-col-md--8-6">
+          <nav class="l-footerNav u-mb-lg--2">
+            <ul class="l-footerNav__list">
+              <li><a class="l-footerLink" title="首頁" href="index.html">首頁</a></li>
+              <li><a class="l-footerLink" title="系列鏡框" href="products.html">系列鏡框</a></li>
+              <li><a class="l-footerLink" title="門市據點" href="locations.html">門市據點</a></li>
+              <li><a class="l-footerLink" title="部落格" href="blog.html">部落格</a></li>
+              <li><a class="l-footerLink" title="常見問題" href="qa.html">常見問題</a></li>
+            </ul>
+          </nav>
+          <ul class="ff-Roboto--Regular u-links--white u-pt--2 u-pt-md--0 u-pt-lg--0">
+            <li class="u-mb-lg--1">
+              <a class="l-footerContactLink" href="tel:+886-800-000-000">
+                <img class="l-footerContactLink__icon" src="assets/img/icon--phone.svg" alt="電話圖示">0800-000-000
+              </a>
+            </li>
+            <li>
+              <a class="l-footerContactLink" href="mailto:glasses@business.com">
+                <img class="l-footerContactLink__icon" src="assets/img/icon--mail-outline.svg" alt="E-mail 圖示">glasses@business.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="l-col l-col-md--8-2">
+          <ul class='l-footerSocialBtns'>
+            <li class="l-footerSocialBtns__item">
+              <a class="l-footerSocialBtns__item__btn" target="_blank" title="前往 facebook" href="https://www.facebook.com">
+                <img class="l-footerSocialBtnsIcon" src="assets/img/icon--social-fb.svg" alt="facebook 圖示">
+              </a>
+            </li>
+            <li class="l-footerSocialBtns__item">
+              <a class="l-footerSocialBtns__item__btn" target="_blank" title="前往 instagram" href="https://www.instagram.com">
+                <img class="l-footerSocialBtnsIcon" src="assets/img/icon--social-ig.svg" alt="instagram 圖示">
+              </a>
+            </li>
+            <li class="l-footerSocialBtns__item">
+              <a class="l-footerSocialBtns__item__btn" target="_blank" title="前往 line 官方" href="https://line.me/zh-hant">
+                <img class="l-footerSocialBtnsIcon" src="assets/img/icon--social-line.svg" alt="line 圖示">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.l-row -->
+      
+      <!-- 使用 hr 的 border 高度會加 2px -->
+      <hr class="u-border--white u-mt--0 u-mb--4 u-mb-lg--6">
+
+      <div class="l-footerStatement">
+        <a class="l-footerStatement__logo" href="index.html">
+          <img class="l-footerLogoImg l-footerStatement__logo__img" src="assets/img/l-logo--white.png" alt="footer logo 圖示" srcset="assets/img/l-logo--white.png 1x, assets/img/l-logo--white@2x.png 2x">
         </a>
-      </li>
-      <li>
-        <a target="_blank" title="前往 instagram" href="https://www.instagram.com">
-          <img src="assets/img/icon--social-ig.svg" alt="instagram 圖示">
-        </a>
-      </li>
-      <li>
-        <a target="_blank" title="前往 line 官方" href="https://line.me/zh-hant">
-          <img src="assets/img/icon--social-line.svg" alt="line 圖示">
-        </a>
-      </li>
-    </ul>
-    <div>
-      <img src="assets/img/l-logo--white.png" alt="" srcset="assets/img/l-logo--white.png 1x, assets/img/l-logo--white@2x.png 2x">
-      <p class="copyright">Copyright © 2020 Glasses.All rights reserved.</p>
-      <ul>
-        <li>
-          <a target="_blank" href="https://policies.google.com/privacy?hl=zh-TW">隱私權政策</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://policies.google.com/terms?hl=zh-TW">服務條款</a>
-        </li>
-      </ul>
-    </div>
+        <ul class="l-footerStatement__list u-links--white">
+          <li class="l-footerStatement__list__copyright u-text--white">
+            Copyright © 2020 Glasses.All rights reserved.
+          </li>
+          <li>
+            <a target="_blank" href="https://policies.google.com/privacy?hl=zh-TW">隱私權政策</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://policies.google.com/terms?hl=zh-TW">服務條款</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </footer>
-  <script>
-    // $('.js-hamIcon').click(function(e) {
-    //   e.preventDefault();
-    //   $('.dropdown').toggleClass('active')
-    // });
-  </script>
+  <script src="assets/js/vendors.js?#{new Date().getTime()}"></script>
+  <script src="assets/js/all.js?#{new Date().getTime()}"></script>
 </body>
 </html>

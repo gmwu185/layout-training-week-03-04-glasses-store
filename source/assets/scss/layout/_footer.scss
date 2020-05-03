@@ -1,0 +1,201 @@
+.l-footerContainer {
+  @include large {
+    max-width: 1174px;
+  }
+}
+
+.l-footerNav{
+  @include medium-below {
+    display: none;
+  }
+  @include medium {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    @include medium {
+      margin-left: -1.25rem;
+    }
+  }
+}
+.l-footerLink {
+  display: inline-block;
+  font-size: 1rem;
+  color: $white;
+  @include large-below{
+    padding: 1.25rem;
+  }
+  @include large {
+    padding: 1rem 1.25rem;
+  }
+  &:hover, &:focus {
+    background-color: darken($primaryColor, 5%);
+  }
+}
+
+.l-footerContactList {
+  margin-bottom: 1.5rem;
+}
+
+.l-footerContactLink {
+  font-family: Roboto Regular;
+  color: $white;
+  display: inline-block;
+  @include medium-below {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  @include medium {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  @include large {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+  &__icon {
+    @include medium-below {
+      vertical-align: top;
+      width: 1.25rem;
+      margin-right: 0.25rem;
+    }
+    @include medium {
+      vertical-align: top;
+      width: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    @include large {
+      vertical-align: middle;
+      width: 2.25rem;
+      margin-right: 0.75rem;
+    }
+  }
+}
+
+.l-footerSocialBtns {
+  display: flex;
+  justify-content: end;
+  @include large-below {
+    margin-right: -0.75rem;
+  }
+  &__item {
+    @include large {
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__btn {
+      display: inline-block;
+      padding: 0.75rem;
+      @include medium {
+        padding: 1.25rem 0.75rem;
+      }
+      @include large {
+        padding: 0;
+      }
+      &:hover {
+        background-color: darken($primaryColor, 5%);
+      }
+    }
+  }
+  &Icon {
+    @include large-below {
+      width: 1.5rem;
+    }
+    @include large {
+      width: 3rem;
+    }
+  }
+}
+
+.l-footerStatement {
+  display: flex;
+  @include medium-below {
+    flex-direction: row-reverse;
+    align-items: end;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include medium {
+      display: none;
+    }
+    @include large {
+      display: block;
+    }
+    &__img {
+      @include medium-below {
+        margin-bottom: -0.125rem;
+      }
+      @include large {
+        display: block;
+        margin-right: 2.375rem;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    font-size: 0.875rem;
+    @include medium-below {
+      line-height: 1.25rem;
+      flex-direction: column;
+    }
+    @include medium {
+      line-height: 1.3125rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    & > li {      
+      &:last-child {
+        margin-bottom: 0;
+        @include medium {
+          padding-right: 0;
+          margin-right: -0.75rem;
+        }
+        
+      }
+
+      & > a {
+        display: inline-block;
+        @include medium-below {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+        @include medium {
+          padding: 0.75rem;
+        }
+        @include large {
+          margin-left: 3.125rem;
+        }
+      }
+    }
+
+    &__copyright {
+      @include medium-below {
+        line-height: 1.1875rem;
+        margin-bottom: 0.25rem;
+      }
+      @include medium {
+        font-size: 1rem;
+        margin-right: auto;
+      }
+    }
+    
+  }
+}
+.l-footerLogoImg {
+  @include medium-below {
+    width: 2.75rem;
+  }
+  @include large {
+    min-width: 5rem;
+  }
+}
+
+
+

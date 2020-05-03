@@ -40,9 +40,30 @@
 /* col */
 $classPrefixName: #{l-col};
 
+@include small-below {
+  [class^="#{$classPrefixName}"] {
+    flex: 1 1 calc(100% - 4px);
+    max-width: 100%;
+  }
+}
+
 .#{$classPrefixName} {
   flex: 1;
 }
+
+@include medium-below {
+  [class^="#{$classPrefixName}"] {
+    padding-left: $gutterWidth-small / 2;
+    padding-right: $gutterWidth-small / 2;
+  }
+}
+@include small {
+  [class^="#{$classPrefixName}"] {
+    padding-left: $gutterWidth-medium / 2;
+    padding-right: $gutterWidth-medium / 2;
+  }
+}
+
 
 @include medium-below {
   @include columnBatch ($classPrefixName, $grid-num-small, -sm);
@@ -54,20 +75,7 @@ $classPrefixName: #{l-col};
   @include columnBatch ($classPrefixName, $grid-num-large, -lg);
 };
 
-@include medium-below {
-  [class^="#{$classPrefixName}"] {
-    flex: 1 1 calc(100% - 4px);
-    max-width: 100%;
-    padding-left: $gutterWidth-small / 2;
-    padding-right: $gutterWidth-small / 2;
-  }
-}
-@include small {
-  [class^="#{$classPrefixName}"] {
-    padding-left: $gutterWidth-medium / 2;
-    padding-right: $gutterWidth-medium / 2;
-  }
-}
+
 // @include  {
   
 // }

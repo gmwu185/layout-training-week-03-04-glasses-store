@@ -17,6 +17,7 @@
 /* layout
 -------------------------------------------------- */
 @import 'layout/grid';
+@import 'layout/nav';
 @import 'layout/footer';
 /* End of layout
 -------------------------------------------------- */
@@ -37,9 +38,9 @@
 
 /* utils
 -------------------------------------------------- */
+@import 'utils/tools';
 @import 'utils/colors';
 @import 'utils/borders';
-@import 'utils/tools';
 /* End of utils
 -------------------------------------------------- */
 
