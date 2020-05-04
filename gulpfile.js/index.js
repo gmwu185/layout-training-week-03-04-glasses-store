@@ -21,7 +21,7 @@ gulp.task("copyHTML", function(){
 
 gulp.task('jade', function() {
   return gulp
-    .src('./source/**/!(_)*.jade') // "!(_)" 檔名前加 "_" 下底線時，檔案不處理 (多半為連結檔)
+    .src('./source/jade/**/!(_)*.jade') // "!(_)" 檔名前加 "_" 下底線時，檔案不處理 (多半為連結檔)
     .pipe($.plumber())
     // .pipe($.data( function () {
     //   var khData = require("../source/data/data.json")
@@ -116,8 +116,8 @@ gulp.task('build',
     // 'bower',
     // 'vendorJs',
     gulp.parallel(
-      'copyHTML', 
-      // 'jade', 
+      // 'copyHTML', 
+      'jade', 
       'sass', 
       'babel', 
       'imageMin'
@@ -131,8 +131,8 @@ gulp.task('default',
     bowerTask,
     vendorJs,
     gulp.parallel(
-      'copyHTML', 
-      // 'jade', 
+      // 'copyHTML', 
+      'jade', 
       'sass', 
       'babel', 
       'imageMin'
@@ -153,7 +153,7 @@ gulp.task('default',
 
       gulp.watch('./source/assets/scss/**/*.scss', gulp.series('sass'));
       gulp.watch('./source/**/*.html', gulp.series('copyHTML'));
-      // gulp.watch('./source/**/*.jade', gulp.series('jade'));
+      gulp.watch('./source/**/*.jade', gulp.series('jade'));
       gulp.watch('./source/assets/js/**/*.js', gulp.series('babel'));
 
       done();
