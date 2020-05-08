@@ -73,23 +73,32 @@ block pageInner
     // /經典系列鏡框
     
     // 聯名設計鏡框
-    section.u-bg--black
-      h2.u-text--white.fontSize--2xl 聯名設計鏡框
-      div
-        img(src='assets/img/p-index--jointName-1.png', alt='聯名設計鏡框圖片一', srcset='assets/img/p-index--jointName-1.png 1x, assets/img/p-index--jointName-1@2x.png 2x')
-        div
-          img(src='assets/img/p-index--jointName-2.png', alt='聯名設計鏡框圖片二', srcset='assets/img/p-index--jointName-2.png 1x, assets/img/p-index--jointName-2@2x.png 2x')
-          div
-            img(src='assets/img/p-index--jointName-3.png', alt='聯名設計鏡框圖片三', srcset='assets/img/p-index--jointName-3.png 1x, assets/img/p-index--jointName-3@2x.png 2x')
-            div
-              a(href='#', title='MORE')
-                | MORE
-                img(src='assets/img/icon--arrow-forward.svg', alt='往前箭頭圖示')
-        ul
-          li
-            a(href='#', title='Double A+') Double A+
-          li
-            a(href='#', title='YOUTH') YOUTH
+    section.l-container--full.u-bg--black.p-jointName.p-jointName--bg
+      article.l-container.u-pt--6.u-pt-md--10.u-pt-lg--16
+        h2.font--pingFang-Semibold-600.u-fontSize--6.u-lineHeight--33.u-fontSize-md--8.u-lineHeight-md--45.u-fontSize-lg--12.u-lineHeight-lg--67.u-text--white.u-textAlign--center.u-mb--4.u-mb-md--10-5.u-mb-lg--15 聯名設計鏡框
+        //- div
+        //-   img(src='assets/img/p-index--jointName-1.png', alt='聯名設計鏡框圖片一', srcset='assets/img/p-index--jointName-1.png 1x, assets/img/p-index--jointName-1@2x.png 2x')
+        //-   div
+        //-     img(src='assets/img/p-index--jointName-2.png', alt='聯名設計鏡框圖片二', srcset='assets/img/p-index--jointName-2.png 1x, assets/img/p-index--jointName-2@2x.png 2x')
+        //-     div
+        //-       img(src='assets/img/p-index--jointName-3.png', alt='聯名設計鏡框圖片三', srcset='assets/img/p-index--jointName-3.png 1x, assets/img/p-index--jointName-3@2x.png 2x')
+        //-       div
+        //-         a(href='#', title='MORE')
+        //-           | MORE
+        //-           img(src='assets/img/icon--arrow-forward.svg', alt='往前箭頭圖示')
+        ul.l-row
+          li.l-col.l-col-sm--1-1.col-md-2-1.u-textAlign--center.u-textAlign-lg--left.u-mb--5.u-mb-md--0
+            .c-translucentOverlay
+              a.c-translucentOverlay__mask(href='#', title='Double A+') 
+                span.font--Roboto-bold-700.c-translucentOverlay__mask__inner.u-fontSize--8.u-lineHeight--43.u-fontSize-lg--18.u-lineHeight-md--95
+                  | Double A+
+              img(src="assets/img/p-index--jointName-5.png", alt="", srcset="")
+          li.l-col.l-col-sm--1-1.col-md-2-1.u-textAlign--center.u-textAlign-lg--right
+            .c-translucentOverlay
+              a.c-translucentOverlay__mask(href='#', title='YOUTH') 
+                span.font--Roboto-bold-700.c-translucentOverlay__mask__inner.u-fontSize--8.u-lineHeight--43.u-fontSize-lg--18.u-lineHeight-md--95
+                  | YOUTH
+              img(src="assets/img/p-index--jointName-6.png", alt="", srcset="")
     // /聯名設計鏡框
     
     // 顧客推薦
@@ -161,7 +170,7 @@ block pageInner
                   label.c-form-label(for='indexFormContent') 意見反應
                   textarea.c-form-textarea.c-form-textarea--resizeNone.c-form-control#indexFormContent(placeholder='請輸入您的意見')
                 .c-form__group.c-form-check.c-form-check--normal.c-form-check--primary.u-mb--5.u-mb-md--6.u-mb-lg--5.u-mb-lg--10
-                  input#indexFormCheck(type='checkbox', checked="")
+                  input#indexFormCheck(type='checkbox')
                   label.u-fontSize--3-5.u-lineHeight--21.u-fontSize-md--4.u-lineHeight-md--24.u-lineHeight-lg--22(for='indexFormCheck') 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
                 .u-textAlign--center
                   button.c-btn.c-btn--primary(type='submit') 確認送出

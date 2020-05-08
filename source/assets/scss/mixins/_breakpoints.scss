@@ -1,12 +1,3 @@
-// breakPoint set
-$smallDeviceWidth: 375px;
-$small-breakpointName: "sm";
-$mediumDeviceWidth: 768px;
-$medium-breakpointName: "md";
-$largeDeviceWidth: 1280px;
-$large-breakpointName: "lg";
-// /breakPoint set
-
 // small device: (sm) - mobile
 @mixin small-below {
   @media (max-width: $smallDeviceWidth) {

@@ -32,6 +32,7 @@
     background-color: transparent;
     border: 1px solid $black;
     background-clip: padding-box;
+    transition: all .5s;
     @include medium-below {
       padding: .4375rem .75rem;
       height: calc(#{(1.375+0.75)}rem + 2px);
@@ -44,6 +45,13 @@
     }
     &::placeholder {
       color: rgba($black, 0.2);
+    }
+    &:focus {
+      background-color: $white;
+      transition: all .5s;
+      &::placeholder {
+        color: $black;
+      }
     }
   }
   &__group {

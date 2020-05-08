@@ -5,9 +5,9 @@
  */
 $grid-breakpoints: (
   xs: 0,
-  sm: 375px,
-  md: 672px,
-  lg: 1280px
+  sm: $smallDeviceWidth,
+  md: $mediumDeviceWidth,
+  lg: $largeDeviceWidth
 ) !default;
 
 $spacer: 1rem !default;
