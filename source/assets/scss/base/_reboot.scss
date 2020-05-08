@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 html{
-	font-size: $font-size-base;
+	font-size: $font-size-base + px;
 }
 body{
 	// font-family: '微軟正黑體', 'Microsoft JhengHei', Tahoma, verdana, STHeiti, serif, sans-serif;
@@ -30,32 +30,19 @@ body{
 	background-color: $bodyBgColor;
 	color: $bodyTextColor;
 }
+h1,h2,h3,h4,h5 {
+	line-height: 1.2;
+}
 img{ 
 	vertical-align: bottom;
 	max-width: 100%;
 	height: auto;
 }
-// textarea, label, input{
-// 	width: 100%;
-// 	display: block;
-// }
-// input, textarea, button{
-// 	border-width: 0;
-// }
-// label{
-// 	margin-bottom: 5px;
-// }
-// input{
-// 	padding: 6px 10px;
-// 	color: $blackColor;
-// 	font-size: 15px;
-// }
-// textarea{
-// 	padding: 8px 10px;
-// 	color: $blackColor;
-// 	font-size: 15px;
-// }
 a{
 	text-decoration: none;
+}
+::selection {
+	background: $primaryDarkColor;
+	color: $white;
 }
 /*----------  reboot  ----------*/

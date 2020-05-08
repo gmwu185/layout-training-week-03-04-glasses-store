@@ -1,0 +1,120 @@
+.c-outdentCards {
+  position: relative;
+  top: -165px;
+  margin-bottom: -165px;
+  padding-bottom: 8px;
+  @include medium {
+    top: -377px;
+    margin-bottom: -377px;
+    padding-bottom: 16px;
+  }
+  @include large {
+    top: -268px;
+    margin-bottom: -268px;
+    padding-bottom: 80px;
+  }
+}
+
+.c-outdentCard {
+  margin-bottom: 16px;
+  @include medium {
+    margin-bottom: 24px;
+  }
+  @include large {
+    margin-bottom: 0;
+  }
+  &__cover {
+    content: "";
+    width: 100%;
+    background-color: $primaryLightColor;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // 256 (高) / 352 (寬) = 0.7272727273
+    padding-bottom: 72.72%;
+    @include medium {
+      // 256 (高) /324 (寬) = 0.7901234568
+      padding-bottom: 79.01%;
+    }
+    @include large {
+      // 256 (高) / 282 (寬) = 0.9078014184
+      padding-bottom: 90.78%;
+    }
+
+    &--img-1 {
+      @include medium-below {
+        background-image: url('././../img/p-index--customer-1-sm.png');
+        @include retina('././../img/p-index--customer-1-sm.png', 2, cover, no-repeat center center );
+      }
+      @include medium {
+        background-image: url('././../img/p-index--customer-1-md.png');
+        @include retina('././../img/p-index--customer-1-md.png', 2, cover, no-repeat center center );
+      }
+      @include large {
+        background-image: url('././../img/p-index--customer-1-lg.png');
+        @include retina('././../img/p-index--customer-1-lg.png', 2, cover, no-repeat center center );
+      }
+    }
+    &--img-2 {
+      @include medium-below {
+        background-image: url('././../img/p-index--customer-2-sm.png');
+        @include retina('././../img/p-index--customer-2-sm.png', 2, cover, no-repeat center center );
+      }
+      @include medium {
+        background-image: url('././../img/p-index--customer-2-md.png');
+        @include retina('././../img/p-index--customer-2-md.png', 2, cover, no-repeat center center );
+      }
+      @include large {
+        background-image: url('././../img/p-index--customer-2-lg.png');
+        @include retina('././../img/p-index--customer-2-lg.png', 2, cover, no-repeat center center );
+      }
+    }
+    &--img-3 {
+      @include medium-below {
+        background-image: url('././../img/p-index--customer-3-sm.png');
+        @include retina('././../img/p-index--customer-3-sm.png', 2, cover, no-repeat center center );
+      }
+      @include medium {
+        background-image: url('././../img/p-index--customer-3-md.png');
+        @include retina('././../img/p-index--customer-3-md.png', 2, cover, no-repeat center center );
+      }
+      @include large {
+        background-image: url('././../img/p-index--customer-3-lg.png');
+        @include retina('././../img/p-index--customer-3-lg.png', 2, cover, no-repeat center center );
+      }
+    }
+    &--img-4 {
+      @include medium-below {
+        background-image: url('././../img/p-index--customer-4-sm.png');
+        @include retina('././../img/p-index--customer-4-sm.png', 2, cover, no-repeat center center );
+      }
+      @include medium {
+        background-image: url('././../img/p-index--customer-4-md.png');
+        @include retina('././../img/p-index--customer-4-md.png', 2, cover, no-repeat center center );
+      }
+      @include large {
+        background-image: url('././../img/p-index--customer-4-lg.png');
+        @include retina('././../img/p-index--customer-4-lg.png', 2, cover, no-repeat center center );
+      }
+    }
+  }
+  &__body {
+    background-color: $white;
+    padding: 1rem;
+    border: solid 1px #DEE2E6;
+    &__title {
+      color: $gray-dimgray;
+      line-height: 21px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      color: $gray-dimgray;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    &__textEnd {
+      color: $gray;
+      line-height: 21px;
+    }
+  }
+}

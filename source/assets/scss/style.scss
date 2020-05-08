@@ -5,6 +5,8 @@
 @import 'mixins/bgImg-retina';
 @import 'mixins/breakpoints';
 @import 'mixins/columnBatch';
+@import 'mixins/fontSizeBatch';
+@import 'mixins/lineHeightBatch';
 // /scss var and funs and mixin
 
 
@@ -34,6 +36,9 @@
 /* components
 -------------------------------------------------- */
 @import 'components/cardList';
+@import 'components/outdentCards';
+@import 'components/form';
+@import 'components/btn';
 /* End of components
 -------------------------------------------------- */
 
@@ -41,8 +46,10 @@
 /* utils
 -------------------------------------------------- */
 @import 'utils/tools';
+@import 'utils/tools-custom';
 @import 'utils/colors';
 @import 'utils/borders';
+@import 'utils/typeset';
 /* End of utils
 -------------------------------------------------- */
 

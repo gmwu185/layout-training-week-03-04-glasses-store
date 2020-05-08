@@ -66,19 +66,15 @@ $classPrefixName: #{l-col};
 
 
 @include medium-below {
-  @include columnBatch ($classPrefixName, $grid-num-small, -sm);
+  @include columnBatch ($classPrefixName, $grid-num-small, -#{$small-breakpointName});
 };
 @include medium {
-  @include columnBatch ($classPrefixName, $grid-num-medium, -md);
+  @include columnBatch ($classPrefixName, $grid-num-medium, -#{$medium-breakpointName});
 };
 @include large {
-  @include columnBatch ($classPrefixName, $grid-num-large, -lg);
+  @include columnBatch ($classPrefixName, $grid-num-large, -#{$large-breakpointName});
 };
 
-
-// @include  {
-  
-// }
 /* /col */
 /*----------  /grid  ----------*/
 

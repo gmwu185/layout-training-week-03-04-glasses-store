@@ -179,26 +179,29 @@
 }
 
 .p-pseudoHoverChangeImg {
-  position: relative;
-  &::after {
-    content: '';
-    display: block;
-    width:100%;
-    padding-top: 40.4040%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 0.5s all;
-    background-image: url("././../img/p-index--classSeriesColor-2.png");
-    @include retina('././../img/p-index--classSeriesColor-2.png', 2, cover, no-repeat center center);
-  }
-  &:hover{
-    cursor: help;
+  &__relative {
+    position: relative;
+    z-index: 10;
     &::after {
-      opacity: 1;
+      content: '';
+      display: block;
+      width:100%;
+      padding-top: 40.4040%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
       transition: 0.5s all;
-      z-index: 1;
+      background-image: url("././../img/p-index--classSeriesColor-2.png");
+      @include retina('././../img/p-index--classSeriesColor-2.png', 2, cover, no-repeat center center);
+    }
+    &:hover{
+      cursor: help;
+      &::after {
+        opacity: 1;
+        transition: 0.5s all;
+        z-index: 1;
+      }
     }
   }
 }

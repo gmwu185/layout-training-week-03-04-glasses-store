@@ -1,0 +1,262 @@
+/*----------  form  ----------*/
+.c-form {  
+  &-label {
+    // display: inline-block; //因 inlin-block 屬性的 border 上下都會佔 1px 要在扣回 2px 可我 line-height 處理
+    display: block;
+    line-height: 1.375rem;
+    @include medium-below {
+      margin-bottom: .125rem;
+    }
+    @include medium {
+      margin-bottom: .25rem;
+    }
+  }
+  &-textarea {
+    height: auto;
+    @include medium-below {
+      min-height: 6.25rem;
+    }
+    @include medium {
+      min-height: 8.5rem;
+    }
+    &--resizeNone {
+      resize: none;
+    }
+  }
+  &-control {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: $black;
+    background-color: transparent;
+    border: 1px solid $black;
+    background-clip: padding-box;
+    @include medium-below {
+      padding: .4375rem .75rem;
+      height: calc(#{(1.375+0.75)}rem + 2px);
+      // 1.375 為行高，0.75 輸入框內距扣階 border 上下線 1px，每個 .c-form__group 會在多 1px
+    }
+    @include medium {
+      padding: .875rem 1rem;
+      height: calc(#{1.375+1.625}rem + 2px);
+      // 1.375 為行高，為行高，1.625 輸入框內距扣階 border 上下線 1px，每個 .c-form__group 會在多 1px
+    }
+    &::placeholder {
+      color: rgba($black, 0.2);
+    }
+  }
+  &__group {
+    @include medium-below {
+      margin-bottom: .75rem;
+    }
+    @include medium {
+      margin-bottom: .75rem;
+    }
+    @include large {
+      margin-bottom: 1rem;  
+    }
+  }
+}
+
+.c-form-check {
+  // min-height: 22px;
+  padding-left: 0;
+  word-wrap: break-word;
+  & > input {
+    position: absolute !important;
+    opacity: 0;
+    margin: 0;
+    overflow: visible;
+    &:checked {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 10px;
+      border: 2px solid #fff;
+    }
+  }
+  & > label {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 10px;
+      border: 2px solid $white;
+      border-left: none;
+      border-top: none;
+      transform: translate(7.75px,4.5px) rotate(45deg);
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      margin-left: -29px;
+      border: 1px solid $black;
+      border-radius: 0;
+    }
+  }
+  &--primary {
+    & > input {
+      &:checked {
+        & + label::before {
+          background-color: $primaryColor;
+          border-color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+.c-form-check--normal {
+  & > input {
+    &:checked {
+      width: 0.27344rem;
+      height: 0.39773rem;
+    }
+  }
+  & > label {
+    margin-left: 18px;
+    @include medium {
+      margin-left: 24px;
+    }
+    &::after {
+      transform: translate(50%, 50%) rotate(45deg);
+      width: 0.27344rem;
+      height: 0.39773rem;
+      margin-top: 3px;
+      margin-left: -14px;
+      @include medium {
+        width: 6px;
+        height: 8px;
+        margin-left: -20px;
+        margin-top: 3px;
+      }
+      @include large {
+        margin-top: 1px;
+      }
+    }
+    &::before {
+      width: 0.875rem;
+      height: 0.875rem;
+      top: 0;
+      left: 0;
+      margin-top: 3px;
+      margin-left: -16px;
+      @include medium {
+        width: 16px;
+        height: 16px;
+        margin-left: -22px;
+        margin-top: 4px;
+      }
+      @include large {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+// .c-form-check--normal {
+//   & > input {
+//     &:first-child {
+//       &:checked {
+//         width: 0.27344rem;
+//         height: 0.39773rem;
+//         & + label {
+//           &::after {
+//             // transform: translate($checkCheckedPosationX+rem, $checkCheckedPosationY+rem) rotate(45deg);
+//             transform: translate(50%, 50%) rotate(45deg);
+//             width: 0.27344rem;
+//             height: 0.39773rem;
+//             margin-top: 4px;
+//           }
+//           &::before {
+//             width: 0.875rem;
+//             height: 0.875rem;
+//             margin-left: 0px;
+//             // left: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   & > label {
+//     padding-left: 18px;
+//     &::before {
+//       width: 0.875rem;
+//       height: 0.875rem;
+//       // margin-left: -1.09375rem;
+//       margin-top: 4px;
+//       top: 0;
+//       left: 0;
+//       margin-left: 0;
+//     }
+//   }
+// }
+
+
+
+
+
+// $checkSize:0.875; // rem 單位計算 > 14px
+// $checkSpacing: $checkSize*1.25;
+// $checkCheckedWidth: $checkSize/3.2;
+// $checkCheckedHeight: $checkSize/2.2;
+// $checkCheckedPosationX: $checkSize/3;
+// $checkCheckedPosationY: $checkSize/4;
+
+// .c-form-check--normal {
+//   & > input {
+//     &:first-child {
+//       &:checked {
+//         width: $checkCheckedWidth + rem;
+//         height: $checkCheckedHeight + rem;
+//         & + label {
+//           &::after {
+//             // transform: translate($checkCheckedPosationX+rem, $checkCheckedPosationY+rem) rotate(45deg);
+//             transform: translate(100%, 50%) rotate(45deg);
+//             width: $checkCheckedWidth + rem; 
+//             height: $checkCheckedHeight + rem;
+//             margin-top: 4px;
+//           }
+//           &::before {
+//             width: $checkSize+rem;
+//             height: $checkSize+rem;
+//             margin-left: -(($checkSpacing)+rem);
+//           }
+//         }
+//       }
+//     }
+//   }
+//   & > label {
+//     padding-left: $checkSpacing+rem;
+//     &::before {
+//       width: $checkSize+rem;
+//       height: $checkSize+rem;
+//       margin-left: -(($checkSpacing)+rem);
+//       margin-top: 4px;
+//     }
+//   }
+// }
+
+// @include checkUI();
+// @include medium {
+//   @include checkUI(1.5, 1.8, md);
+// }
+
+/*----------  form  ----------*/

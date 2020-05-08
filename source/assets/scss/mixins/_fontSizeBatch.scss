@@ -1,0 +1,20 @@
+// /**
+//  ** 使用範例: @include fontSizeBatch (sm)
+//  ** @param {Value} $breakpointName 斷點名稱，如果沒有帶入字串透過 @if 處理成空字串，空字串為全域斷點用。
+// * */
+@mixin fontSizeBatch ($breakpointName: null) {
+  @if ($breakpointName == null) {
+    $breakpointName: '' !default;
+  }
+  @else {
+    $breakpointName: -#{$breakpointName};
+  }
+  @for $i from $font-stertMinNum through $font-loopNum {
+    $fontSizeRemBase: $font-size-base !default;
+    .u-fontSize#{$breakpointName: !default}--#{$i} {
+      /** 字級為 #{ $i * $font-tolerance }px **/
+      font-size: ($i * $font-tolerance / $fontSizeRemBase)+rem; 
+      // 處理 xp 換點 rem。
+    }
+  }
+};
