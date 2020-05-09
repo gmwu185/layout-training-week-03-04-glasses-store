@@ -72,7 +72,7 @@
   padding-left: 0;
   word-wrap: break-word;
   & > input {
-    position: absolute !important;
+    position: absolute;
     opacity: 0;
     margin: 0;
     overflow: visible;
@@ -84,7 +84,7 @@
       left: 0;
       width: 7px;
       height: 10px;
-      border: 2px solid #fff;
+      // border: 2px solid $white;
     }
   }
   & > label {
@@ -103,7 +103,7 @@
       left: 0;
       width: 7px;
       height: 10px;
-      border: 2px solid $white;
+      border: 2px solid transparent;
       border-left: none;
       border-top: none;
       transform: translate(7.75px,4.5px) rotate(45deg);
@@ -122,9 +122,16 @@
   &--primary {
     & > input {
       &:checked {
-        & + label::before {
-          background-color: $primaryColor;
-          border-color: $primaryColor;
+        & + label{
+          &::before {
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+          }
+          &::after {
+            border: 2px solid $white;
+            border-left: none;
+            border-top: none;
+          }
         }
       }
     }
