@@ -14,18 +14,18 @@
   }
 }
 
-.p-index-vision{
+.p-vision {
   &--bg {
-    background-size: auto 100%;
+    background-size: cover;
     background-image: url('././../img/p-index--vision-sm.png');
     @include retina('././../img/p-index--vision-sm.png', 2, cover, no-repeat center center);
     @include medium {
-      background-size: auto 100%;
+      background-size: cover;
       background-image: url('././../img/p-index--vision-md.png');
       @include retina('././../img/p-index--vision-md.png', 2, cover, no-repeat center center);
     }
     @include large {
-      background-size: auto 100%;
+      background-size: cover;
       background-image: url('././../img/p-index--vision-lg.png');
       @include retina('././../img/p-index--vision-lg.png', 2, cover, no-repeat center center);
     }
