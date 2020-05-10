@@ -7,15 +7,15 @@
     // }
   }
   &__item{
-    padding-top: 1.25rem;
-    padding-bottom: .5rem;
+    padding-top: 20px;
+    padding-bottom: 8px;
     @include medium {
       min-height: 255px;
       margin-bottom: 12px;
     }
     @include large {
       min-height: 289px;
-      padding-top: 1rem;
+      padding-top: 16px;
       padding-bottom: 0;
       margin-bottom: 0px;
       // min-height: 500px;
@@ -34,13 +34,13 @@
     }
     &__title{
       text-align: center;
-      font-size: 1.25rem;
-      line-height: 1.75rem;
-      margin-bottom: .5rem;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 8px;
       color: $primaryDarkColor;
       @include large {
-        font-size: 1.5rem;
-        line-height: 2.0625rem;
+        font-size: 24px;
+        line-height: 33px;
         margin-bottom: 4px;
       }
     }
@@ -58,13 +58,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    height: 80px;
     @include large {
-      height: 6.25rem;
+      height: 100px;
       margin-bottom: 40px;
     }
     &__img {
-      width: 5rem;
+      width: 80px;
       
       @include large {
         width: 100px;

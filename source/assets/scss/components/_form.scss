@@ -3,21 +3,21 @@
   &-label {
     // display: inline-block; //因 inlin-block 屬性的 border 上下都會佔 1px 要在扣回 2px 可我 line-height 處理
     display: block;
-    line-height: 1.375rem;
+    line-height: 22px;
     @include medium-below {
-      margin-bottom: .125rem;
+      margin-bottom: 2px;
     }
     @include medium {
-      margin-bottom: .25rem;
+      margin-bottom: 4px;
     }
   }
   &-textarea {
     height: auto;
     @include medium-below {
-      min-height: 6.25rem;
+      min-height: 100px;
     }
     @include medium {
-      min-height: 8.5rem;
+      min-height: 136px;
     }
     &--resizeNone {
       resize: none;
@@ -26,20 +26,20 @@
   &-control {
     width: 100%;
     display: block;
-    font-size: 1rem;
-    line-height: 1.375rem;
+    font-size: 16px;
+    line-height: 22px;
     color: $black;
     background-color: transparent;
     border: 1px solid $black;
     background-clip: padding-box;
     transition: all .5s;
     @include medium-below {
-      padding: .4375rem .75rem;
+      padding: 7px 12px;
       height: calc(#{(1.375+0.75)}rem + 2px);
       // 1.375 為行高，0.75 輸入框內距扣階 border 上下線 1px，每個 .c-form__group 會在多 1px
     }
     @include medium {
-      padding: .875rem 1rem;
+      padding: 14px 16px;
       height: calc(#{1.375+1.625}rem + 2px);
       // 1.375 為行高，為行高，1.625 輸入框內距扣階 border 上下線 1px，每個 .c-form__group 會在多 1px
     }
@@ -56,13 +56,13 @@
   }
   &__group {
     @include medium-below {
-      margin-bottom: .75rem;
+      margin-bottom: 12px;
     }
     @include medium {
-      margin-bottom: .75rem;
+      margin-bottom: 12px;
     }
     @include large {
-      margin-bottom: 1rem;  
+      margin-bottom: 16px;  
     }
   }
 }
@@ -141,8 +141,8 @@
 .c-form-check--normal {
   & > input {
     &:checked {
-      width: 0.27344rem;
-      height: 0.39773rem;
+      width: 4.375px;
+      height: 6.3637px;
     }
   }
   & > label {
@@ -152,8 +152,8 @@
     }
     &::after {
       transform: translate(50%, 50%) rotate(45deg);
-      width: 0.27344rem;
-      height: 0.39773rem;
+      width: 4.375px;
+      height: 6.3637px;
       margin-top: 3px;
       margin-left: -14px;
       @include medium {
@@ -167,8 +167,8 @@
       }
     }
     &::before {
-      width: 0.875rem;
-      height: 0.875rem;
+      width: 14px;
+      height: 14px;
       top: 0;
       left: 0;
       margin-top: 3px;

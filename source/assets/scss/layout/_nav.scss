@@ -11,7 +11,7 @@
   }
   @include medium {
     align-items: center;
-    padding: 1.875rem 3rem;
+    padding: 30px 48px;
   }
   @include medium {
     padding: 24px 48px;
@@ -23,10 +23,10 @@
   &__logo {
     display: inline-block;
     @include medium-below {
-      max-width: 3rem;
+      max-width: 48px;
     }
     @include medium {
-      max-width: 5rem;
+      max-width: 80px;
     }
   }
   &__toggler {
@@ -60,10 +60,10 @@
       display: flex;
       align-items: center;
       margin-left: auto;
-      margin-right: -1.25rem;
+      margin-right: -20px;
     }
     @include large {
-      margin-right: -2rem;
+      margin-right: -32px;
     }
   } 
 }
@@ -71,12 +71,12 @@
 .l-navbarLink {
   background-color: $primaryColor;
   display: block;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  padding: 1rem;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px;
   color: $white;
   @include medium {
-    padding: 1rem 1.25rem;
+    padding: 16px 20px;
   }
   @include medium-below {
     border-top: 1px solid;
@@ -87,7 +87,7 @@
     }
   }
   @include large {
-    padding: 1rem 2rem;
+    padding: 16px 32px;
   }
   &--hover {
     &:hover, &:focus {
