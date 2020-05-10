@@ -55,8 +55,8 @@
       left: 0;
       opacity: 0;
       transition: 0.5s all;
-      background-image: url("././../img/p-index--classSeriesColor-2.png");
-      @include retina('././../img/p-index--classSeriesColor-2.png', 2, cover, no-repeat center center);
+      // background-image: url("././../img/p-index--classSeriesColor-2.png");
+      // @include retina('././../img/p-index--classSeriesColor-2.png', 2, cover, no-repeat center center);
     }
     &:hover{
       cursor: help;
@@ -66,5 +66,19 @@
         z-index: 1;
       }
     }
+  }
+}
+
+.u-hoverZoomOutBgImg {
+  transition: all .8s;
+  &:hover {
+    background-size: 130% auto;
+    transition: all .8s;
+  }
+  &-position--yt10p {
+    background-position-y: 10%;
+  }
+  &-position--yt90p {
+    background-position-y: 90%;
   }
 }

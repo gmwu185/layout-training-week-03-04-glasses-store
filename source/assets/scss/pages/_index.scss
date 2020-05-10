@@ -213,4 +213,319 @@
     background-position: center center;
   }
 }
+
+.p-photoWall {
+  display: flex;
+  @include medium-below {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+  }
+  @include medium {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  @include large {
+    margin-left: -170px;
+    margin-right: -170px;
+    margin-bottom: 60px;
+  }
+  &__left {
+    @include medium-below {
+      width: 47.7062%;
+      min-width: 156px;
+      margin-right: 2px;
+    }
+    @include medium {
+      // 251+3+418=672
+      // 251/672=0.3735119048
+      width: 37.3511%;
+      min-width: 251px;
+      margin-right: 3px;
+    }
+    @include large {
+      // 573+8+958=1539
+      // 573/1539=0.3723196881
+      width: 37.2319%;
+      width: 41.8291%;
+      margin-right: 8px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      @include medium-below {
+        // 226/156=1.44871794871
+        padding-top: 144.8717%;
+      }
+      @include medium {
+        // 367/251=1.4621513944
+        padding-top: 146.2151%;
+      }
+      @include large {
+        // 840/573=1.4659685864
+        padding-top: 146.5968%;
+      }
+    }
+    &--bgImg {
+      background-image: url('././../img/p-index--jointName-1-lg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-size: cover;
+      background-size: 100% auto;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    // 100-47.7062=52.2938
+    width: 52.2938%;
+    @include medium {
+      width: 70%;
+    }
+    &__top {
+      display: flex;
+      flex-direction: column;
+      @include medium-below {
+        // 81/226=0.3584070796
+        height: 35.8407%;
+        margin-bottom: 2px;
+      }
+      @include medium {
+        // 198+3+166=367
+        // 198/367=0.5395095368
+        height: 53.9509%;
+        min-height: 198px;
+        margin-bottom: 3px;
+      }
+      @include large {
+        // 454+8+378=840
+        // 454/840=0.5404761905
+        height: 54.0476%;
+        min-height: 454px;
+        margin-bottom: 8px;
+      }
+      &--bgImg {
+        background-image: url('././../img/p-index--jointName-2-lg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-size: 100% auto;
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-Direction: column;
+      @include medium-below {
+        // 100-35.8407=64.1593
+        height: 64.1593%;
+        // position: relative;
+      }
+      @include medium {
+        position: relative;
+        height: 70%;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      &__one {
+        @include medium-below {
+          // 42+2+99=143
+          // 42/143=0.2937062937
+          height: 29.3706%;
+          margin-bottom: 2px;
+        }
+        @include medium {
+          // 58+4+356=418
+          // 356/418=0.8516746411
+          width: 85.1674%;
+          height: 50%;
+        }
+        @include large {;
+          height: 53.75%;
+        }
+        &--bgImg {
+          background-image: url('././../img/p-index--jointName-3-lg.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          // background-size: cover;
+          background-size: 100% auto;
+        }
+      }
+      &__two {
+        display: flex;
+        @include medium-below {
+          // 42+2+99=143
+          // 99/143=0.6923076923
+          height: 69.2307%;
+          margin-right: 2px;
+        }
+        @include medium {
+          // 58+4+356=418
+          // 58/418=0.1387559809
+          width: 13.8755%;
+          min-width: 58px;
+          height: 100%;
+          margin-right: 4px;
+        }
+        @include large {
+          margin-right: 8px;
+        }
+        &Photo {
+          @include medium-below {
+            // 32+2+135 = 169
+            // 32/169=0.1893491124
+            width: 18.9349%;
+            min-width: 32px;
+          }
+          @include medium {
+            height: 100%;
+            width: 100%;
+          }
+          &--bgImg {
+            background-image: url('././../img/p-index--jointName-4-lg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            // background-size: cover;
+            background-size: 100% auto;
+          }
+        }
+        &Btn {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          @include medium-below {
+            flex: 1;
+          }
+          @include medium {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 85.1674%;
+            height: 50%;
+          }
+          @include large {
+            height: 46.25%;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-extendBtn {
+  display: inline-block;
+  // width: 100%;
+  @include medium-below {
+    margin-left: 2px;  
+    flex: 1;
+    justify-content: flex-end;
+  }
+  @include medium {
+    display: flex;
+    align-items: center;
+  }
+  &--bgImg {
+    background-image: url('././../img/p-index--jointName-moreBtn-lg.png');
+    background-repeat: no-repeat;
+    background-position: right 100% center;
+    @include medium-below {
+      background-size: 77% auto;
+    }
+    @include medium {
+      background-size: 74% auto;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $white;
+    @include medium-below {
+      padding-top: 4px;
+      padding-bottom: 3px;
+      padding-left: 12px;
+      padding-right: 14px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      margin-left: 11px;
+    }
+    @include medium {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 19px;
+      padding-right: 11px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      margin-left: 16px;
+    }
+    @include large {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 32px;
+      padding-right: 19px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      margin-left: 27px;
+    }
+    &__string {
+      position: relative;
+      &::after, &::before {
+        position: absolute;
+        content: "MORE";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all .3s;
+      }
+      @include medium-below {
+        margin-right: 8px;
+      }
+      @include medium {
+        margin-right: 10px;
+      }
+      @include large {
+        margin-right: 17px;
+      }
+    }
+    &__arr {
+      @include medium-below {
+        width: 18px;
+      }
+      @include medium {
+        width: 27px;
+      }
+      @include large {
+        width: 48px;
+      }
+    }
+  }
+}
+
+.p-extendBtn{
+  transition: all .3s;
+  .p-extendBtn__inner__arr {
+    transition: transform 0.3s 0s;
+  }
+  &:hover {
+    @include medium {
+      .p-extendBtn__inner__arr {
+        transition: all .3s;
+        transform: translateX(5px);
+      }
+      .p-extendBtn__inner__string {
+        &::after {
+          transition: all .3s;
+          top: -100%;
+        }
+        &::before {
+          transition: all .3s;
+          top: -170%;
+        }
+      }
+    }
+  }
+}
 /*----------  /index  ----------*/

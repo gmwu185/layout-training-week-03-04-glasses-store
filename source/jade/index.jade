@@ -76,16 +76,24 @@ block pageInner
     section.l-container--full.u-bg--black.p-jointName.p-jointName--bg
       article.l-container.u-pt--6.u-pt-md--10.u-pt-lg--16
         h2.font--pingFang-Semibold-600.u-fontSize--6.u-lineHeight--33.u-fontSize-md--8.u-lineHeight-md--45.u-fontSize-lg--12.u-lineHeight-lg--67.u-text--white.u-textAlign--center.u-mb--4.u-mb-md--10-5.u-mb-lg--15 聯名設計鏡框
-        //- div
-        //-   img(src='assets/img/p-index--jointName-1.png', alt='聯名設計鏡框圖片一', srcset='assets/img/p-index--jointName-1.png 1x, assets/img/p-index--jointName-1@2x.png 2x')
-        //-   div
-        //-     img(src='assets/img/p-index--jointName-2.png', alt='聯名設計鏡框圖片二', srcset='assets/img/p-index--jointName-2.png 1x, assets/img/p-index--jointName-2@2x.png 2x')
-        //-     div
-        //-       img(src='assets/img/p-index--jointName-3.png', alt='聯名設計鏡框圖片三', srcset='assets/img/p-index--jointName-3.png 1x, assets/img/p-index--jointName-3@2x.png 2x')
-        //-       div
-        //-         a(href='#', title='MORE')
-        //-           | MORE
-        //-           img(src='assets/img/icon--arrow-forward.svg', alt='往前箭頭圖示')
+        .p-photoWall
+          .p-photoWall__left.p-photoWall__left--bgImg.u-hoverZoomOutBgImg.u-hoverZoomOutBgImg-position--yt10p
+            //- img(src='assets/img/p-index--jointName-1-lg.png', alt='聯名設計鏡框圖片一', srcset='assets/img/p-index--jointName-1-lg.png 1x, assets/img/p-index--jointName-1-lg@2x.png 2x')
+          .p-photoWall__right
+            .p-photoWall__right__top.p-photoWall__right__top--bgImg.u-hoverZoomOutBgImg.u-hoverZoomOutBgImg-position--yt10p
+              //- img(src='assets/img/p-index--jointName-2-lg.png', alt='聯名設計鏡框圖片二', srcset='assets/img/p-index--jointName-2-lg.png 1x, assets/img/p-index--jointName-2-lg@2x.png 2x')
+            .p-photoWall__right__bottom
+              .p-photoWall__right__bottom__one.p-photoWall__right__bottom__one--bgImg.u-hoverZoomOutBgImg.u-hoverZoomOutBgImg-position--yt90p
+              //- img.p-photoWall__right__bottom__one(src='assets/img/p-index--jointName-3-lg.png', alt='聯名設計鏡框圖片三', srcset='assets/img/p-index--jointName-3-lg.png 1x, assets/img/p-index--jointName-3-lg@2x.png 2x')
+              .p-photoWall__right__bottom__two
+                .p-photoWall__right__bottom__twoPhoto.p-photoWall__right__bottom__twoPhoto--bgImg.u-hoverZoomOutBgImg
+                //- img.p-photoWall__right__bottom__twoPhoto(src='assets/img/p-index--jointName-4-lg.png', alt='聯名設計鏡框圖片三', srcset='assets/img/p-index--jointName-4-lg.png 1x, assets/img/p-index--jointName-4-lg@2x.png 2x')
+                .p-photoWall__right__bottom__twoBtn
+                  a.font--Roboto-bold-700.u-fontSize--6.u-lineHeight--34.u-fontSize-md--10.u-lineHeight-md--53.u-fontSize-lg--18.u-lineHeight-lg--95.u-link--primary.p-extendBtn.p-extendBtn--bgImg(href='#', title='MORE')
+                    span.p-extendBtn__inner
+                      span.p-extendBtn__inner__string
+                        | MORE
+                      img.p-extendBtn__inner__arr(src='assets/img/icon--arrow-forward.svg', alt='往前箭頭圖示')
         ul.l-row
           li.l-col.l-col-sm--1-1.col-md--2-1.u-textAlign--center.u-textAlign-lg--left.u-mb--5.u-mb-md--0
             .u-translucentOverlay
