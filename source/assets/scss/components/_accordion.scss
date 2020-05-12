@@ -1,0 +1,95 @@
+.c-accordion {
+  &__item {
+    border: 1px solid $black;
+    &__header {
+      border-bottom: 1px solid $black;
+      background-color: $white;
+      // padding: 16px;
+      // @include medium {
+      //   padding: 16px 24px;
+      // }
+      // @include large {
+      //   padding: 22px 38px;
+      // }
+    }
+    &__headerLink {
+      display: block;
+      position: relative;
+      color: $black;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      @include medium {
+        padding: 16px 24px;
+      }
+      @include large {
+        padding: 22px 38px;
+      }
+
+      // 收閤箭頭
+      &::after {
+        content: '';
+        display: flex;
+        align-self: flex-end;
+        width: 39px;
+        min-width: 39px;
+        // 修正 .c-accordion__item__headerLink padding 原為 height: 24px，上下值會超過字元行高，以最小行高數值為主。
+        height: 22px; 
+        background-image: url('././../img/icon--arrowDown.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        // margin-left: 1rem;
+        transition: all .5s;
+        transform-origin: 50% 50%;
+        // 定位參考來源：https://wcc723.github.io/css/2013/10/10/css-transform-origin/
+      }
+    }
+    &.c-js-accordion--active {
+      .c-js-accordionHeaderLink::after {
+        transition: all .5s;
+        transform: rotate(-180deg);
+      }
+    }
+    // /收閤箭頭
+    
+    &__body {
+      padding: 16px;
+      background-color: $gray-light;
+      @include medium {
+        padding: 16px 24px;
+      }
+      @include large {
+        padding: 22px 38px;
+      }
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 600;
+      padding-right: .4rem;
+      margin-right: auto;
+      @include large {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+      @include large {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &__answer {
+        @include medium-below {
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+  &__item + &__item {
+    border-top: none;
+  }
+}

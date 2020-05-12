@@ -97,7 +97,7 @@ gulp.task('clean', function () {
 
 gulp.task("imageMin", function(){
   return gulp
-    .src("./source/assets/img/*")
+    .src("./source/assets/img/**")
     .pipe($.if(options.env === "production", $.imagemin()))
     .pipe(gulp.dest('./output/assets/img'))
 });

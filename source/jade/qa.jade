@@ -2,10 +2,87 @@ extends extends/_layoutTemplate.jade
 
 // qa.jade
 block pageInner
-  header.l-container--full.u-d--flex.u-alignItems--end.p-banner.p-banner--bg
+  header.l-container--full.p-banner.p-banner--bg
     article.l-container
-      h1.font--pingFang-Medium-500.u-fontSize-lg--16.u-lineHeight-lg--90
-        | 常見問題
+      h1.font--pingFang-Medium-500.u-fontSize--7.u-lineHeight--40.u-fontSize-md--12.u-lineHeight-md--67.u-fontSize-lg--16.u-lineHeight-lg--90.p-bannerTitle
+        span.p-bannerTitle__string
+          | 常見問題
+        img.u-d-md--none.p-bannerTitle__icon(src="assets/img/icon--helpCircleSharp-sm.svg", alt="常見問題 icon 圖示")
+        img.u-d--none.u-d-md--inline-block.p-bannerTitle__icon(src="assets/img/icon--helpCircleSharp-md.svg", alt="常見問題 icon 圖示")
   main
-
+    section.l-container--full.u-bg--white
+      article.l-container.p-qaContent
+        h2.font--pingFang-Medium-500.u-fontSize--5.u-lineHeight--28.u-fontSize-md--7.u-lineHeight-md--40.u-fontSize-lg--8.u-lineHeight-lg--45.u-mb--4.u-mb-md--8.u-mb-lg--4
+          | 我想詢問配鏡問題
+        ul.c-accordion
+          li.c-accordion__item.c-js-accordionItem
+            .c-accordion__item__header
+              a.c-accordion__item__headerLink.c-js-accordionHeaderLink(href="#")
+                h3.font--pingFang-Semibold-600.c-accordion__item__title
+                  | Q1.請問可否自備鏡框單配鏡片？
+            .c-accordion__item__body.c-js-accordionBody
+              p.font--pingFang-Regular-400.c-accordion__item__text
+                span.c-accordion__item__text__answer
+                  span.u-d-md--block
+                    | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+                  span.u-d-md--block
+                    | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+                span.u-d-md--block
+                  | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+          li.c-accordion__item.c-js-accordionItem
+            .c-accordion__item__header
+              a.c-accordion__item__headerLink.c-js-accordionHeaderLink(href="#")
+                h3.font--pingFang-Semibold-600.c-accordion__item__title
+                  | Q2.眼鏡都可以20分鐘取件嗎？
+            .c-accordion__item__body.c-js-accordionBody
+              p.font--pingFang-Regular-400.c-accordion__item__text
+                span.c-accordion__item__text__answer
+                  span.u-d-md--block
+                    | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+                  span.u-d-md--block
+                    | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+                span.u-d-md--block
+                  | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+          li.c-accordion__item.c-js-accordionItem
+            .c-accordion__item__header
+              a.c-accordion__item__headerLink.c-js-accordionHeaderLink(href="#")
+                h3.font--pingFang-Semibold-600.c-accordion__item__title
+                  | Q3.散光鏡片需要額外加價嗎？
+            .c-accordion__item__body.c-js-accordionBody
+              p.font--pingFang-Regular-400.c-accordion__item__text
+                span.c-accordion__item__text__answer
+                  span.u-d-md--block
+                    | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+                  span.u-d-md--block
+                    | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+                span.u-d-md--block
+                  | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+          li.c-accordion__item.c-js-accordionItem
+            .c-accordion__item__header
+              a.c-accordion__item__headerLink.c-js-accordionHeaderLink(href="#")
+                h3.font--pingFang-Semibold-600.c-accordion__item__title
+                  | Q4.我可以使用舊眼鏡的度數配鏡片嗎？
+            .c-accordion__item__body.c-js-accordionBody
+              p.font--pingFang-Regular-400.c-accordion__item__text
+                span.c-accordion__item__text__answer.u-d--block.u-d-md--inline
+                  span.u-d-md--block
+                    | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+                  span.u-d-md--block
+                    | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+                span.u-d-md--block
+                  | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
+          li.c-accordion__item.c-js-accordionItem
+            .c-accordion__item__header
+              a.c-accordion__item__headerLink.c-js-accordionHeaderLink(href="#")
+                h3.font--pingFang-Semibold-600.c-accordion__item__title
+                  | Q5.請問可以單購買鏡框嗎？
+            .c-accordion__item__body.c-js-accordionBody
+              p.font--pingFang-Regular-400.c-accordion__item__text
+                span.c-accordion__item__text__answer
+                  span.u-d-md--block
+                    | A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。
+                  span.u-d-md--block
+                    | 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。
+                span.u-d-md--block
+                  | 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。
 // /qa.jade

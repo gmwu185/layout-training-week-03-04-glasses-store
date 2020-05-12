@@ -114,6 +114,20 @@ $utilities: map-merge(
       class: u-d,
       values: none inline inline-block block table flex inline-flex
     ),
+    // Sizing utilities
+    "width": (
+      property: width,
+      class: u-width,
+      responsive: true,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+
     // Flex
     // "flex": (
     //   responsive: true,
