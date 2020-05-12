@@ -21,7 +21,7 @@ $(function() {
   // 隱藏所有的 li 內文
   $('.c-js-accordionBody').hide();
   // 預設讓第一個 li 加上 active
-  $('.c-js-accordionItem').eq(0).addClass('js-active');
+  $('.c-js-accordionItem').eq(0).addClass('c-js-accordion--active');
   // 預設讓第一個 li 內文 顯示
   $('.c-js-accordionBody').eq(0).show();
   
