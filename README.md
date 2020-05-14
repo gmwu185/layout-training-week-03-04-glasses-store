@@ -18,7 +18,7 @@
 ## 抽出 Bootstrap 4 工具類樣式
 取用 Bootstrap Scss 的工具類樣式，修改命名模式適用於整個專案中的。
 ## 就是要盡可能近 Adobe XD 設計稿
-這樣的想法與做法也是費時的一部份，了解觀念是一回事，能透過實做落實觀念又是一回事，但能在實做的同時又能掌握處理細節處理能力，才算是達到活用的目的。
+這樣的想法與做法也是費時的一部份，了解觀念是一回事，能透過實做落實觀念又是一回事，但能在實做的同時又能掌握處理細節處理能力，才算是達到活用的目的。
 在刻意練習一書指出要成為頂尖出色的人才，練習的時間與內容就是其中一環，就算是天才若要達到出色的境界也是透過練習，唯說時間會花費較多但必定有相對的成效。
 
 以一個容器的 `Border` 來說，上下就會差個 `2px` 了，若要達到 `1px` 也不差真的還要下不少功夫處理。
@@ -31,6 +31,8 @@
 - 滑入背景圖片放大。
 ## faviocn 圖示
 基本的使用尺寸格規與設定認識。
+## @2 與 2X 的圖片處理
+分為 `img:s` tag 與 `background-image` 的 scss mixin。
 ## 簡單的 Scss 產出批量的 Class
 Scss `@for` / `@include` / `@mixin` / `@content` ....
 
@@ -49,7 +51,7 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
   * 格線系統 `.l-col-<<斷點代號>>--<<全幾等分>>-<<之幾等分>>`
 * `.p` : 特定頁面使用 (page)
 * `.c` : 組件化用於多頁面使用 (components)
-* `.c-js` / `.js` : 收 JavaScript 所操作組件對象或節點，另外也可視為直接由 JS 操作的樣式名稱。
+* `.c-js` / `.js` : 受 JavaScript 所操作組件對象或節點，另外也可視為直接由 JS 操作的樣式名稱。
 * `.u` : 工具類樣式，用於調整細部架構或於 HTML 特定元素使用特定斷點等相關樣式 (utils)，與主題樣式只有依附關係所分類獨立。
 
 
@@ -65,6 +67,8 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 - [GitHub repos](https://github.com/gmwu185/layoutTraining-hexschool-flex)
 - [GitHub pages 成品頁面](https://gmwu185.github.io/layoutTraining-hexschool-flex/index.html)
 - [GitHub pages - flex grid](https://gmwu185.github.io/layoutTraining-hexschool-flex/flexGrid.html)
+
+透過 Scss 的 `@for` 與 `@if` 的函式處理出批量樣式，配合整理的 CSS 命名。
 ## mobole device: (sm)
 - 視口大小：375 x 812 px
 - gird：
@@ -114,7 +118,7 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 
 
 
-# 各頁面區塊斷點字級與字高所量得數直記錄
+# 各頁面區塊斷點字級與字高所量得數直記錄
 `lh`：為 xd 設計稿右方字體設定的行高數值。
 `all-h`：為 xd 設計稿顯示區的字行高。
 
@@ -167,6 +171,36 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 - sm - fz: 14px / lh: 21px / all-h: 42px/2 (21px)
 - mb - fz: 16px / lh: 24px / all-h: 48px/2 (24px)
 - lg - fz: 16px / lh: 24px / all-h: 22px
+
+
+
+## Product-OP
+### H1
+sm - fz: 20px / lh: 48px / all-h: 26px
+mb - fz: 32px / lh: 48px / all-h: 43px
+lg - fz: 42px / lh: 63px / all-h: 55px
+### H2
+sm - fz: 16px / lh: 36px / all-h: 22px
+mb - fz: 24px / lh: 36px / all-h: 33px
+lg - fz: 32px / lh: 48px / all-h: 45px
+### 頁籤
+sm - fz: 14px / lh: 19px / all-h: 19px
+mb - fz: 28px / lh: 42px / all-h: 37px
+lg - fz: 42px / lh: 63px / all-h: 55px
+### 產品號與價錢
+sm - fz: 16px / lh: 30px / all-h: 21px
+mb - fz: 24px / lh: 30px / all-h: 32px
+lg - fz: 24px / lh: 36px / all-h: 32px
+### 頁碼
+#### 中文
+sm - fz: 12px / lh: 18px / all-h: 17px
+mb - fz: 19px / lh: 29px / all-h: 26px
+lg - fz: 19px / lh: 29px / all-h: 26px
+#### 數字
+sm - fz: 11px / lh: 17px / all-h: 15px
+mb - fz: 18px / lh: 27px / all-h: 24px
+lg - fz: 18px / lh: 27px / all-h: 24px
+
 
 
 # 其他
