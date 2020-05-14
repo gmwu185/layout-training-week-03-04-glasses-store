@@ -1,3 +1,11 @@
+# 製作成品與資源連結
+- Pages
+	- [index](https://gmwu185.github.io/layout-training-week-03-04-glasses-store/)
+	- [常見問題](https://gmwu185.github.io/layout-training-week-03-04-glasses-store/qa.html)
+- Adobe XD 設計稿
+	- [第三週-首頁](https://xd.adobe.com/view/14382793-a7ff-4859-64a3-a19a08895be4-6209/grid)
+	- [第四週-全站](https://hexschool.tw/ukIot)
+
 # 前言
 這是個希望以專案等級應對開發上所產出的實作，完全由最底層的 CSS 來建構全站的樣式架構。
 
@@ -104,6 +112,12 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 - 由 `body` 向子孫層內的相關段落做繼承，例 `P`, `li`
 - `line-height: 1.5;`
 
+
+
+# 各頁面區塊斷點字級與字高所量得數直記錄
+`lh`：為 xd 設計稿右方字體設定的行高數值。
+`all-h`：為 xd 設計稿顯示區的字行高。
+
 ## index
 ### Promise-Desert 2020 早春系列
 - sm - fz: 16px / lh: 30px / all-h: 22px
@@ -156,7 +170,6 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 
 
 # 其他
-====
 ## 聯名設計鏡框圖片比例
 - lg - 1170/1184=0.9881756757
 - md - 644/560=1.15
@@ -165,3 +178,6 @@ Scss `@for` / `@include` / `@mixin` / `@content` ....
 - lg - 518/334=1.5508982036
 - md - 147/77=1.9090909091
 - sm - 102/53=1.9245283019
+
+
+
