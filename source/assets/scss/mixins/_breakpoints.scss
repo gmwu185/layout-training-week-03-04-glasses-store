@@ -34,3 +34,15 @@
   }
 };
 // /desktop device: (lg) - desktop
+// Extra large: (xl) - large desktops
+@mixin extra-large-below {
+  @media (max-width: $extraLargeDeviceWidth - 1px) {
+    @content
+  }
+};
+@mixin extra-large {
+  @media (min-width: $extraLargeDeviceWidth) {
+    @content
+  }
+};
+// /Extra large: (xl) - large desktops

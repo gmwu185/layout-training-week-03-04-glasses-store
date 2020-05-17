@@ -237,7 +237,7 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
-  @include large {
+  @include extra-large {
     margin-left: -170px;
     margin-right: -170px;
     margin-bottom: 60px;
@@ -255,7 +255,7 @@
       min-width: 251px;
       margin-right: 3px;
     }
-    @include large {
+    @include extra-large {
       // 573+8+958=1539
       // 573/1539=0.3723196881
       width: 37.2319%;
@@ -274,7 +274,7 @@
         // 367/251=1.4621513944
         padding-top: 146.2151%;
       }
-      @include large {
+      @include extra-large {
         // 840/573=1.4659685864
         padding-top: 146.5968%;
       }
@@ -311,7 +311,7 @@
         min-height: 198px;
         margin-bottom: 3px;
       }
-      @include large {
+      @include extra-large {
         // 454+8+378=840
         // 454/840=0.5404761905
         height: 54.0476%;
@@ -355,7 +355,7 @@
           width: 85.1674%;
           height: 50%;
         }
-        @include large {;
+        @include extra-large {;
           height: 53.75%;
         }
         &--bgImg {
@@ -383,7 +383,7 @@
           height: 100%;
           margin-right: 4px;
         }
-        @include large {
+        @include extra-large {
           margin-right: 8px;
         }
         &Photo {
@@ -401,12 +401,12 @@
             background-position: center;
             background-repeat: no-repeat;
             // background-size: cover;
-            @include large-below {
+            @include extra-large-below {
               background-size: 110% auto;
               background-image: url('././../img/p-index--jointName-4-lg.png');
               @include retina('././../img/p-index--jointName-4-lg.png', 2, 110% auto, no-repeat center);
             }
-            @include large {
+            @include extra-large {
               background-image: url('././../img/p-index--jointName-4-lg.png');
               @include retina('././../img/p-index--jointName-4-lg.png', 2, 110% auto, no-repeat center);
               background-size: 100% auto;
@@ -427,7 +427,7 @@
             width: 85.1674%;
             height: 50%;
           }
-          @include large {
+          @include extra-large {
             height: 46.25%;
             justify-content: flex-end;
           }
